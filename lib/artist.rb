@@ -6,6 +6,9 @@ class Artist
   
   def initialize(name)
     @name = name
+    if @songs.nil?
+      @songs = []
+    end
   end
   
   def self.all 
